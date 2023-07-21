@@ -1,0 +1,12 @@
+.player-container {
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  height: 30px;
+  width: 30px;
+}
