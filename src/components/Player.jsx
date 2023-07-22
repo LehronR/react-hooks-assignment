@@ -27,10 +27,16 @@ export default function Player({ name }) {
           onClick={deletePlayer}
         />
       </div>
-      <p>{score}</p>
-      <div>
-        <button onClick={decrement}>Subtract Point</button>
-        <button onClick={increment}>Add Point</button>
+      <div className='scoreChange-container'>
+        <p className='playerScore'>{score}</p>
+        <div className='btn-container'>
+          <button onClick={decrement} className='scoreBtn subtract'>
+            -
+          </button>
+          <button onClick={increment} className='scoreBtn add'>
+            +
+          </button>
+        </div>
       </div>
     </div>
   );
